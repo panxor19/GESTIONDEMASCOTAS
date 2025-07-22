@@ -1,6 +1,7 @@
 package com.testing.agil.model;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Objects;
 
 /**
@@ -139,8 +140,7 @@ public class Mascota {
             return 0;
         }
         
-        LocalDate hoy = LocalDate.now();
-        return hoy.getYear() - fechaNacimiento.getYear();
+        return Period.between(fechaNacimiento, LocalDate.now()).getYears();
     }
     
     /**

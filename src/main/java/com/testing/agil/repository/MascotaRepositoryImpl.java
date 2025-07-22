@@ -271,11 +271,13 @@ public class MascotaRepositoryImpl implements MascotaRepository {
     @Override
     public List<Mascota> listarCachorros() {
         List<Mascota> mascotas = new ArrayList<>();
-        String sql = "SELECT * FROM mascotas WHERE fecha_nacimiento > date('now', '-1 year') AND activo = TRUE ORDER BY nombre";
+        String sql = "SELECT * FROM mascotas WHERE fecha_nacimiento > ? AND activo = TRUE ORDER BY nombre";
         
         try (Connection conn = DriverManager.getConnection(dbUrl);
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            
+            pstmt.setDate(1, Date.valueOf(LocalDate.now().minusYears(1)));
+            ResultSet rs = pstmt.executeQuery();
             
             while (rs.next()) {
                 mascotas.add(mapResultSetToMascota(rs));
@@ -291,11 +293,13 @@ public class MascotaRepositoryImpl implements MascotaRepository {
     @Override
     public List<Mascota> listarSenior() {
         List<Mascota> mascotas = new ArrayList<>();
-        String sql = "SELECT * FROM mascotas WHERE fecha_nacimiento <= date('now', '-7 years') AND activo = TRUE ORDER BY nombre";
+        String sql = "SELECT * FROM mascotas WHERE fecha_nacimiento <= ? AND activo = TRUE ORDER BY nombre";
         
         try (Connection conn = DriverManager.getConnection(dbUrl);
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            
+            pstmt.setDate(1, Date.valueOf(LocalDate.now().minusYears(7)));
+            ResultSet rs = pstmt.executeQuery();
             
             while (rs.next()) {
                 mascotas.add(mapResultSetToMascota(rs));
