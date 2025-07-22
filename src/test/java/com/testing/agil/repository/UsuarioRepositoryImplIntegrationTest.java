@@ -193,4 +193,14 @@ class UsuarioRepositoryImplIntegrationTest {
             () -> assertFalse(repository.existePorEmail(""))
         );
     }
+
+    @Test
+    @DisplayName("Debería lanzar excepción al intentar crear usuario nulo")
+    void should_ThrowException_When_CreatingNullUser() {
+        // Given
+        Usuario usuarioInvalido = null;
+        
+        // When & Then
+        assertThrows(RuntimeException.class, () -> repository.crear(usuarioInvalido));
+    }
 }
