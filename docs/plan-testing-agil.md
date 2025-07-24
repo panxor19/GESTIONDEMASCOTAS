@@ -3,7 +3,7 @@
 ## 📋 Información del Sprint
 - **Sprint**: Sprint 1 - Implementación CRUD con TDD
 - **Duración**: 2 semanas
-- **Equipo**: 1 Developer (Tú) + 1 Product Owner (Instructor) + 1 Scrum Master (Facilitador)
+- **Equipo**: 3 Developers (Hector Ruiz, Hellmuth Albornoz, Brian Luna) + 1 Product Owner (Ficticio) + 1 Scrum Master (Ficticio)
 - **Objetivo**: Implementar sistema CRUD completo aplicando TDD y principios de Testing Ágil
 
 ## 🎯 Goal del Sprint
@@ -154,7 +154,7 @@ Una historia está terminada cuando:
 
 ## 👥 Roles y Responsabilidades
 
-### Developer (Tú)
+### Developer (Equipo)
 - Implementar código siguiendo TDD
 - Escribir y ejecutar pruebas automatizadas
 - Mantener cobertura >= 80%
@@ -162,13 +162,13 @@ Una historia está terminada cuando:
 - Documentar ciclos TDD realizados
 - Hacer commits frecuentes y descriptivos
 
-### Product Owner (Instructor)
+### Product Owner
 - Definir y clarificar criterios de aceptación
 - Revisar que las historias cumplan los requisitos
 - Validar la funcionalidad implementada
 - Proporcionar feedback sobre el producto
 
-### Scrum Master (Facilitador)
+### Scrum Master
 - Facilitar el proceso de desarrollo
 - Ayudar a resolver impedimentos
 - Asegurar seguimiento de la metodología ágil
@@ -251,7 +251,3 @@ mvn exec:java -Dexec.mainClass="com.testing.agil.Main"
 - Todas las pruebas deben pasar antes de cada commit
 - Reporte de cobertura generado automáticamente
 - Documentación actualizada en cada cambio
-
----
-
-**Nota**: Este plan está diseñado para un desarrollador individual que simula un entorno ágil real, aplicando las mejores prácticas de Testing Ágil y TDD en un proyecto práctico.

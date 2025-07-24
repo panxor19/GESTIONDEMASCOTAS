@@ -8,8 +8,8 @@
 |-----------|--------|-----------|
 | **4 operaciones CRUD** | ✅ CUMPLIDO | Usuario y Mascota: Create, Read, Update, Delete |
 | **12 ciclos TDD** | ✅ CUMPLIDO | Documentados en `/docs/ciclos-tdd.md` (15+ ciclos) |
-| **8-16 pruebas unitarias** | ✅ SUPERADO | 39 pruebas automatizadas ejecutándose |
-| **80% cobertura JaCoCo** | ⚠️ PENDIENTE | Actual: 51% - Necesita mejora |
+| **8-16 pruebas unitarias** | ✅ SUPERADO | 92 pruebas automatizadas ejecutándose |
+| **80% cobertura JaCoCo** | ⚠️ PENDIENTE | Actual: 74% - Necesita mejora |
 | **Mockito implementado** | ✅ CUMPLIDO | Tests de servicios con mocks |
 | **Principios SOLID** | ✅ CUMPLIDO | Documentado en `/docs/principios-solid.md` |
 
@@ -48,14 +48,11 @@
 ## 📈 ESTADÍSTICAS DEL PROYECTO
 
 ```
-Total Tests: 39
-├── Usuario: 22 tests (9 model + 8 repository + 13 service)
-└── Mascota: 9 tests (4 repository + 5 service)
+Total Tests: 92
+├── Usuario: 31 tests (9 model + 9 repository + 13 service)
+└── Mascota: 61 tests (41 repository + 20 service)
 
-Cobertura: 51% (Objetivo: 80%)
-├── Model: 66%
-├── Service: 53%  
-└── Repository: 44%
+Cobertura: 74% (Objetivo: 80%)
 
 Ciclos TDD: 15+ documentados
 Principios SOLID: 1 aplicado (SRP - Single Responsibility)
@@ -64,7 +61,7 @@ Mockito: Implementado en tests de servicios
 
 ## ⚠️ ACCIONES PARA COMPLETAR AL 100%
 
-### 1. Mejorar Cobertura de Código (51% → 80%)
+### 1. Mejorar Cobertura de Código (74% → 80%)
 **Estrategias:**
 - Agregar tests para casos de error en repositorios
 - Completar tests de validaciones en servicios
