@@ -10,13 +10,13 @@ Sistema CRUD completo para gestión de mascotas desarrollado con metodología **
 
 | Requerimiento | Meta | Logrado | Estado |
 |---------------|------|---------|--------|
-| **Pruebas Automatizadas** | 8-16 tests | **71 tests** | ✅ **SUPERADO (444%)** |
+| **Pruebas Automatizadas** | 8-16 tests | **92 tests** | ✅ **SUPERADO (444%)** |
 | **Operaciones CRUD** | 4 operaciones | **4 completas** | ✅ **COMPLETO** |
 | **Ciclos TDD** | 12+ documentados | **15+ ciclos** | ✅ **SUPERADO** |
-| **Cobertura JaCoCo** | ≥80% | **67%** | ⚠️ **CERCANO** |
+| **Cobertura JaCoCo** | ≥80% | **72%** | ⚠️ **CERCANO** |
 | **Framework Testing** | JUnit 5 + Mockito | **Implementado** | ✅ **COMPLETO** |
 | **Principios SOLID** | Documentados | **Implementados** | ✅ **COMPLETO** |
-| **Documentación** | Completa | **100%** | ✅ **PERFECTO** |
+| **Documentación** | Completa | **100%** | ✅ **COMPLETO** |
 
 ## 🏗️ **Arquitectura del Sistema**
 
@@ -55,18 +55,18 @@ src/
 
 ## 📊 **Estadísticas de Testing**
 
-### **Distribución de Tests (71 total):**
-- **MascotaRepositoryImplIntegrationTest**: 21 tests
+### **Distribución de Tests (92 total):**
+- **MascotaRepositoryImplIntegrationTest**: 41 tests
 - **MascotaServiceImplTest**: 20 tests
 - **UsuarioServiceImplTest**: 13 tests
 - **UsuarioTest**: 9 tests
-- **UsuarioRepositoryImplIntegrationTest**: 8 tests
+- **UsuarioRepositoryImplIntegrationTest**: 9 tests
 
 ### **Cobertura por Paquete:**
-- **Model**: 75% ✨
-- **Repository**: 67% ✨
-- **Service**: 63% ✨
-- **TOTAL**: **67%** 🎯
+- **Model**: 74% ✨
+- **Repository**: 80% ✨
+- **Service**: 61% ✨
+- **TOTAL**: **74%** 🎯
 
 ## 🔄 **Metodología TDD Aplicada**
 
@@ -145,18 +145,21 @@ src/
 
 ## 🏆 **Logros del Proyecto**
 
-1. **🎯 Tests Excepcionales**: 71 tests (444% sobre el mínimo requerido)
+1. **🎯 Tests Excepcionales**: 92 tests (444% sobre el mínimo requerido)
 2. **📈 TDD Ejemplar**: 15+ ciclos completos documentados
 3. **🏗️ Arquitectura Sólida**: Separación clara de responsabilidades
-4. **📊 Coverage Estratégico**: 67% con tests de alta calidad
+4. **📊 Coverage Estratégico**: 74% con tests de alta calidad
 5. **📚 Documentación 100%**: Todos los entregables académicos
 
-## 👨‍💻 **Autor**
+## 👨‍💻 **Autores**
 
-**Estudiante**: [Tu Nombre]  
+- Hector Ruiz
+- Hellmut Albornoz
+- Brian Luna
+
 **Curso**: Testing Ágil + TDD en Automatización de Pruebas  
+
 **Fecha**: Julio 2025  
-**Institución**: [Tu Institución]
 
 ## 📄 **Licencia**
 
@@ -168,17 +171,15 @@ Este proyecto es parte de un portafolio académico y está disponible para fines
 
 ```bash
 # Clonar el repositorio
-git clone [tu-repo-url]
+git clone https://github.com/panxor19/GESTIONDEMASCOTAS
 
 # Navegar al directorio
-cd trabajo
+cd GESTIONDEMASCOTAS
 
 # Ejecutar tests
-./mvnw test
+./mvnw clean test
 
 # Ver reporte de cobertura
-./mvnw test jacoco:report
+./mvnw clean test jacoco:report
 # Abrir: target/site/jacoco/index.html
 ```
-
-**¡Portafolio completado exitosamente! 🎉**
