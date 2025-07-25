@@ -175,7 +175,7 @@ Aplicamos los 5 principios SOLID de manera colaborativa: Single Responsibility (
 
 ---
 
-**Fecha de reflexión**: Diciembre 2024
+**Fecha de reflexión**: Julio 2025
 **Duración del proyecto**: 28 días
 **Nivel de satisfacción del equipo**: 9/10
 **Equipo**: 3 programadores colaborando efectivamente
